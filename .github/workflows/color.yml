@@ -34,12 +34,12 @@ jobs:
         run: |
           echo "The selected color is ${{steps.set_color.outputs.color}}"
       #if logic
-       - name: Logic execution
-         run: |
-           if  [ "${{steps.set_color.outputs.color}}" = "blue" ] ; then
+      - name: Logic execution
+        run: |
+          if  [ "${{steps.set_color.outputs.color}}" = "blue" ] ; then
             echo "color is blue"
-           else 
+          else 
             echo "color is not blue"
-           fi
+          fi
          
        
